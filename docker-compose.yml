@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  symfony:
+    build:
+      context: .
+      dockerfile: docker/symfony/Dockerfile
+    image: symfony
+    working_dir: /srv/api/
+    ports:
+      - 80:80
